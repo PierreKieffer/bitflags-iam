@@ -10,7 +10,11 @@ bitflags-iam/
 │   └── iam.proto           # Protobuf schema defining the gRPC API
 ├── src/
 │   ├── main.rs             # gRPC IAM server
-│   └── client.rs           # Example client and tests
+│   ├── client.rs           # Example client and tests
+│   ├── iam_manager.rs      # Core IAM business logic and permission management
+│   ├── lib.rs              # Library entry point and public exports
+│   ├── models.rs           # Data structures and models
+│   └── utils.rs            # Utility functions and helpers
 ├── build.rs                # Protobuf compilation script
 ├── Cargo.toml              # Dependencies and project configuration
 ├── Cargo.lock              # Dependency version lock
